@@ -1,0 +1,4 @@
+node_modules/*
+files-to-upload/*
+test-report/*
+dist/*
