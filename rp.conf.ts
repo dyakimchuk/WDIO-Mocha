@@ -1,4 +1,4 @@
-import { truncate } from "fs";
+//import { truncate } from "fs";
 
 export const report_portal_conf = {
     reportPortalClientConfig: {
@@ -9,7 +9,7 @@ export const report_portal_conf = {
         project: 'superadmin_personal',
         mode: 'DEFAULT',
         debug: false,
-        description: 'Launch description text',
+        description: 'Launch description text 2',
         attributes: [{ key: 'tag', value: 'foo' }],
         headers: { foo: 'bar' }, // optional headers for internal http client
     },

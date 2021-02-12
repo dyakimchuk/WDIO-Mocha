@@ -39,4 +39,4 @@ jobs:
 
             - run: npm run code:format
 
-            - run: npm run build
+            - run: npm run run_local

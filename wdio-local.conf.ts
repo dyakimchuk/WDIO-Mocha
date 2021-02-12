@@ -1,5 +1,4 @@
 import { join } from 'path';
-//@ts-ignore
 import { report_portal_conf } from './rp.conf';
 const reportportal = require('wdio-reportportal-reporter');
 const RpService = require("wdio-reportportal-service");
