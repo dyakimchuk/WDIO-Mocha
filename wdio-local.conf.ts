@@ -1,5 +1,5 @@
 import { join } from 'path';
-import { report_portal_conf } from './rp.conf';
+import { report_portal_conf } from './credentials/reportportal.conf';
 const reportportal = require('wdio-reportportal-reporter');
 const RpService = require("wdio-reportportal-service");
 
