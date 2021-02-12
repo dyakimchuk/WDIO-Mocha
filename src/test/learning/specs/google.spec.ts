@@ -4,8 +4,8 @@ describe('Google.', () => {
         browser.pause(3000)
     });
     it('Checking Browser.', () => {
-        browser.url('https://www.google.com');
-        console.log('pizdaaaaaaa!!!!!');
+        browser.url('https://www.googlezaqwerty.com');
+        console.log('Browse check passed');
         browser.pause(3000)
     });
 });
