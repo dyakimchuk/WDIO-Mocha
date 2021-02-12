@@ -8,6 +8,7 @@
   "author": "Warley Gabriel da Paixão",
   "scripts": {
     "run_local": "npx del ./dist && npx tsc && npx del test-report && wdio ./dist/wdio-local.conf.js --spec ./dist/**/learning/**/*.spec.js",
+    "run_js": "npx del ./dist && npx tsc && npx del test-report && wdio ./dist/wdio-local.conf.js --spec ./src/test/learning/specs/lighthouse.spec.js",
     "run_remote": "npx del ./dist && npx tsc && npx del test-report && wdio ./dist/wdio-selen.conf.js --spec ./dist/**/learning/**/*.spec.js",
     "build": "npx del ./dist && npx tsc",
     "watch": "npx tsc -w",
@@ -46,6 +47,7 @@
     "@types/node": "^14.14.20",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
+    "@wdio/devtools-service": "^6.3.7",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.17.0",
     "husky": "^4.3.7",

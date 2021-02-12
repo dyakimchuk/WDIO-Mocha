@@ -1,11 +1,30 @@
-describe('Google.', () => {
+// const assert = require('assert')
+
+describe('Suite 1 With performance.', () => {
     before(() => {
-        browser.url('https://github.com');
-        browser.pause(3000)
+        browser.enablePerformanceAudits();
     });
+
     it('Checking Browser.', () => {
-        browser.url('https://www.googlezaqwerty.com');
+        browser.url('https://automationteststore.com');
         console.log('Browse check passed');
-        browser.pause(3000)
     });
+
+    it('Check Wikipedia Perfomance.', () => {
+        browser.url('https://wikipedia.org');
+        console.log('Browse check passed');
+        let metrics = browser.getMetrics();
+        let score = browser.getPerformanceScore(); // get Lighthouse Performance score
+
+
+        metrics = browser.getMetrics();
+        score = browser.getPerformanceScore();
+        console.log('Page Score is:', score);
+        console.log('Extendet Metrics:', metrics);
+    });
+
+    after(() => {
+        browser.disablePerformanceAudits()
+    })
+
 });

@@ -9,10 +9,10 @@ exports.config = {
     port: 4444,
     path: '/wd/hub',
     specs: ['./dist/**/*.spec.js'],
-    maxInstances: 1,
+    maxInstances: 2,
     capabilities: [
         {
-            maxInstances: 1,
+            maxInstances: 2,
             browserName: 'chrome',
             'goog:chromeOptions': {
                 args: [
@@ -28,7 +28,7 @@ exports.config = {
     logLevel: 'trace',
     outputDir: './test-report/output',
     bail: 0,
-    baseUrl: 'http://automationpractice.com',
+    baseUrl: 'http://bing.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
@@ -63,6 +63,7 @@ exports.config = {
         ],
         'chromedriver', //need to be comment out for use on remote machine
         [RpService, {}],
+        ['devtools', {}],
     ],
     beforeSession() {
         require('expect-webdriverio').setOptions({ wait: 5000 });

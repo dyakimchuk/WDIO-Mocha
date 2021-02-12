@@ -22,6 +22,7 @@
       "node",
       "@wdio/sync",
       "@wdio/mocha-framework",
+      "@wdio/devtools-service",
       "wdio-image-comparison-service"
     ]
   },

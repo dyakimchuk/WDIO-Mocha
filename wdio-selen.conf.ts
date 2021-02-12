@@ -29,7 +29,7 @@ exports.config = {
     logLevel: 'trace',
     outputDir: './test-report/output',
     bail: 0,
-    baseUrl: 'http://automationpractice.com',
+    baseUrl: 'https://automationteststore.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
@@ -64,6 +64,7 @@ exports.config = {
         ],
         //'chromedriver',
         [RpService, {}],
+        ['devtools', {}],
     ],
     beforeSession() {
         require('expect-webdriverio').setOptions({ wait: 5000 });
