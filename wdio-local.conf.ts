@@ -28,7 +28,8 @@ exports.config = {
     logLevel: 'trace',
     outputDir: './test-report/output',
     bail: 0,
-    baseUrl: 'http://automationpractice.com',
+    //baseUrl: 'http://automationpractice.com',
+    baseUrl: 'http://dyetetica.net/en/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
@@ -46,7 +47,7 @@ exports.config = {
                 disableWebdriverScreenshotsReporting: false,
             },
         ],
-        [reportportal, report_portal_conf],
+        [reportportal, report_portal_conf], 'dot',
     ],
     services: [
         [
