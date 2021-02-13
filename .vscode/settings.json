@@ -1,3 +1,7 @@
 {
-    "npm-scripts.showStartNotification": false
+    "npm-scripts.showStartNotification": false,
+    "files.exclude": {
+        "**/.git": false
+    },
+    "workbench.colorTheme": "Tokyo Night"
 }
